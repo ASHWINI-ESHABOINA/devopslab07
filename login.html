@@ -1,0 +1,177 @@
+<html>
+ <head>
+  <title>
+   Student Login
+  </title>
+  
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .header img {
+            width: 190px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .header h1 {
+            color: #ff6600;
+            margin: 0;
+        }
+        .header h2 {
+            color: #ff6600;
+            margin: 0;
+        }
+        .header h3 {
+            color: #6b6b6b;
+            margin: 0;
+        }
+        .header p {
+            color: #6b6b6b;
+            margin: 0;
+        }
+        .nav {
+            background-color: #003366;
+            overflow: hidden;
+        }
+        .nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+background-color: #e0e0e0
+        }
+        .container h2 {
+            color: #333;
+        }
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            width: 300px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .captcha {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .login-box button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+        .login-box a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position:relative;
+            width: 100%;
+            bottom: 0;
+        }
+  </style>
+  <script>
+   function generateCaptcha() {
+            var captcha = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById('captcha').innerText = captcha;
+        }
+        window.onload = generateCaptcha;
+  </script>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="University Logo" height="100" src="https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/1663484.png?v=20190226124952" width="100"/>
+   <h1>
+    JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY
+   </h1>
+   <h2>
+    HYDERABAD
+   </h2>
+   <h3>
+    UNIVERSITY COLLEGE OF ENGINEERING MANTHANI (JNTUH UCEM)
+   </h3>
+   <p>
+    Examination Branch
+   </p>
+   <p>
+    Centenary Colony(Po), Panur (Vill), Ramagiri (Mdl), Peddapalle, Telangana-505212, India
+   </p>
+  </div>
+  <div class="nav">
+  </div>
+  <div class="container">
+   <h2>
+    Student Login
+   </h2>
+   <div class="login-box">
+    <p>
+     Sign in to start your session
+    </p>
+    <input placeholder="Hallticket No" type="text"/>
+    <input placeholder="Password" type="password"/>
+    <input placeholder="Security Code" type="text"/>
+    <div class="captcha" id="captcha">
+    </div>
+    <button>
+     Login
+    </button>
+    <p>
+     <a href="#">
+      Get Login Details or Forgot Password?
+     </a>
+    </p>
+    <p>
+     If not register ?
+     <a href="#">
+      click here to Register
+     </a>
+    </p>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    © Copyrights Reserved. 2017. JNTUH University College of Engineering Manthani, Peddapalle (Telangana) India.
+   </p>
+   </p>
+  </div>
+ </body>
+</html>
